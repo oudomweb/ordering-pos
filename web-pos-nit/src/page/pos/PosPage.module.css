@@ -1,0 +1,36 @@
+/* Bill display styles */
+.billContainer {
+  font-family: Arial, sans-serif;
+  max-width: 400px;
+  margin: 0 auto;
+  padding: 20px;
+}
+
+.billTitle {
+  text-align: center;
+  margin-bottom: 16px !important;
+}
+
+.totalsSection {
+  margin-top: 16px;
+  border-top: 1px dashed #ccc;
+  padding-top: 12px;
+}
+
+.totalRow {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 8px;
+}
+
+.divider {
+  margin: 16px 0 !important;
+}
+
+.paymentMethods {
+  margin-left: 20px;
+}
+
+.printButton {
+  margin-top: 16px;
+}

@@ -1,0 +1,25 @@
+.form-section {
+  background-color: #f9f9f9;
+  padding: 16px;
+  border-radius: 8px;
+  margin-bottom: 16px;
+}
+
+.ant-form-item-label > label {
+  font-weight: 600;
+}
+
+.add-button {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  color: #1890ff;
+  cursor: pointer;
+  margin-top: 8px;
+}
+
+h3 {
+  margin-bottom: 8px;
+  font-size: 16px;
+  font-weight: 600;
+}

@@ -1,0 +1,32 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+* {
+    font-family: 'Battambang', system-ui, sans-serif !important;
+}
+
+body {
+    background-color: #f4f6f8;
+    font-family: 'Battambang', system-ui, sans-serif !important;
+}
+
+.summary-card {
+    border: none !important;
+    border-radius: 16px !important;
+    box-shadow: 0 4px 12px rgba(0,0,0,0.05) !important;
+    transition: all 0.3s ease !important;
+}
+
+.summary-card:hover {
+    transform: translateY(-5px) !important;
+    box-shadow: 0 12px 24px rgba(0,0,0,0.1) !important;
+}
+
+.ant-table-row {
+    transition: background 0.2s !important;
+}
+
+.ant-table-row:hover {
+    background-color: #f8fafc !important;
+}
