@@ -1,0 +1,596 @@
+/* Modern Sidebar Styling - Add this to your MainLayout.css */
+
+/* Main sidebar container */
+.ant-layout-sider {
+  background: #f8f9fa !important;
+  border-right: 1px solid #e9ecef;
+  box-shadow: 2px 0 8px rgba(0, 0, 0, 0.08);
+}
+
+.admin-header-g1 {
+  height: 100px;
+  margin: 20px;
+  display: flex;
+  align-items: center;
+  align-items: center;
+  justify-content: center;
+  font-size: 32px;
+  font-weight: 700;
+}
+
+/* Logo section styling */
+.demo-logo-vertical {
+  height: 80px;
+  margin: 20px;
+  background: linear-gradient(135deg, #1e4a2d, #2d6a42);
+  border-radius: 12px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+  box-shadow: 0 4px 12px rgba(30, 74, 45, 0.2);
+}
+
+/* Profile Container */
+.profile-container {
+  display: flex;
+  align-items: center;
+  cursor: pointer;
+  margin-left: auto;
+  /* Pushes to the right */
+  padding: 8px 12px;
+  border-radius: 8px;
+  transition: background-color 0.2s ease;
+}
+
+.profile-container:hover {
+  background-color: #f8f9fa;
+}
+
+/* Profile Image */
+.img-user {
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  object-fit: cover;
+  border: 2px solid #e9ecef;
+  transition: border-color 0.2s ease;
+}
+
+.profile-container:hover .img-user {
+  border-color: #dee2e6;
+}
+
+/* Dropdown Arrow */
+.dropdown-arrow {
+  margin-left: 8px;
+  color: #6c757d;
+  font-size: 12px;
+  transition: transform 0.2s ease, color 0.2s ease;
+}
+
+.profile-container:hover .dropdown-arrow {
+  color: #495057;
+  transform: translateY(1px);
+}
+
+/* If you need to position within a header/navbar */
+.header-right {
+  display: flex;
+  align-items: center;
+  margin-left: auto;
+}
+
+/* Alternative positioning using absolute positioning */
+.profile-absolute {
+  position: absolute;
+  top: 16px;
+  right: 16px;
+  z-index: 100;
+}
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+  .img-user {
+    width: 32px;
+  }
+
+  .profile-container {
+    padding: 6px 10px;
+  }
+}
+
+/* Active/Selected State */
+.profile-container.active {
+  background-color: #e3f2fd;
+  border-radius: 8px;
+}
+
+.profile-container.active .img-user {
+  border-color: #2196f3;
+}
+
+.profile-container.active .dropdown-arrow {
+  color: #2196f3;
+  transform: rotate(180deg);
+}
+
+.demo-logo-vertical::before {
+  content: 'K';
+  color: white;
+  font-size: 32px;
+  font-weight: 700;
+  font-family: 'Arial', sans-serif;
+}
+
+/* Menu container */
+.ant-menu {
+  background: transparent !important;
+  border: none !important;
+  padding: 0 16px;
+}
+
+/* Version item styling */
+.version-item {
+  margin-bottom: 24px !important;
+  padding: 0 !important;
+}
+
+.version-item .ant-menu-item-selected {
+  background: transparent !important;
+}
+
+.version-item .ant-tag {
+  border-radius: 20px;
+  padding: 4px 12px;
+  font-size: 11px;
+  font-weight: 600;
+  margin: 0 auto;
+  display: block;
+  width: fit-content;
+}
+
+/* Menu items styling */
+.ant-menu-item,
+.ant-menu-submenu>.ant-menu-submenu-title {
+  height: 56px !important;
+  line-height: 56px !important;
+  margin: 4px 0 !important;
+  border-radius: 12px !important;
+  padding: 0 16px !important;
+  display: flex !important;
+  align-items: center !important;
+  transition: all 0.3s ease !important;
+  border: none !important;
+  background: transparent !important;
+  color: #6c757d !important;
+}
+
+/* Menu item content alignment */
+.ant-menu-item .ant-menu-item-icon,
+.ant-menu-submenu-title .ant-menu-item-icon {
+  font-size: 20px !important;
+  margin-right: 12px !important;
+  color: inherit !important;
+  width: 20px !important;
+  text-align: center !important;
+}
+
+.ant-menu-item-selected {
+  background: linear-gradient(135deg, #1e4a2d, #2d6a42) !important;
+  color: white !important;
+  box-shadow: 0 4px 12px rgba(30, 74, 45, 0.3) !important;
+}
+
+.ant-menu-item-selected .ant-menu-item-icon {
+  color: white !important;
+}
+
+.ant-menu-item:hover,
+.ant-menu-submenu>.ant-menu-submenu-title:hover {
+  background: #e9ecef !important;
+  color: #495057 !important;
+  transform: translateX(2px);
+}
+
+.ant-menu-item-selected:hover {
+  background: linear-gradient(135deg, #1e4a2d, #2d6a42) !important;
+  color: white !important;
+  transform: translateX(0);
+}
+
+/* Submenu styling */
+.ant-menu-submenu {
+  background: transparent !important;
+}
+
+.ant-menu-submenu-title {
+  background: transparent !important;
+}
+
+.ant-menu-submenu-arrow {
+  color: #6c757d !important;
+  right: 16px !important;
+  font-size: 12px !important;
+}
+
+.ant-menu-submenu-open>.ant-menu-submenu-title {
+  background: #e9ecef !important;
+  color: #495057 !important;
+}
+
+/* Submenu children */
+.ant-menu-sub {
+  background: transparent !important;
+  box-shadow: none !important;
+  border-radius: 0 !important;
+  margin-left: 0 !important;
+  padding-left: 20px !important;
+}
+
+.ant-menu-sub .ant-menu-item {
+  height: 44px !important;
+  line-height: 44px !important;
+  font-size: 14px !important;
+  color: #868e96 !important;
+  padding-left: 48px !important;
+}
+
+.ant-menu-sub .ant-menu-item:hover {
+  background: #f1f3f4 !important;
+  color: #495057 !important;
+}
+
+.ant-menu-sub .ant-menu-item-selected {
+  background: linear-gradient(135deg, #1e4a2d, #2d6a42) !important;
+  color: white !important;
+}
+
+/* Menu text styling */
+.ant-menu-title-content {
+  font-size: 14px !important;
+  font-weight: 500 !important;
+  letter-spacing: 0.2px !important;
+}
+
+/* Collapsed state styling */
+.ant-layout-sider-collapsed .ant-menu-item,
+.ant-layout-sider-collapsed .ant-menu-submenu>.ant-menu-submenu-title {
+  padding: 0 !important;
+  justify-content: center !important;
+}
+
+.ant-layout-sider-collapsed .ant-menu-item .ant-menu-item-icon,
+.ant-layout-sider-collapsed .ant-menu-submenu-title .ant-menu-item-icon {
+  margin-right: 0 !important;
+  font-size: 20px !important;
+}
+
+.ant-layout-sider-collapsed .demo-logo-vertical {
+  margin: 20px 8px;
+}
+
+.ant-layout-sider-collapsed .demo-logo-vertical::before {
+  font-size: 24px;
+}
+
+.ant-layout-sider-collapsed .version-item {
+  display: none;
+}
+
+/* Scrollbar styling for sidebar */
+.ant-layout-sider::-webkit-scrollbar {
+  width: 4px;
+}
+
+.ant-layout-sider::-webkit-scrollbar-track {
+  background: transparent;
+}
+
+.ant-layout-sider::-webkit-scrollbar-thumb {
+  background: #dee2e6;
+  border-radius: 2px;
+}
+
+.ant-layout-sider::-webkit-scrollbar-thumb:hover {
+  background: #adb5bd;
+}
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+  .ant-layout-sider {
+    position: fixed !important;
+    height: 100vh !important;
+    z-index: 1000 !important;
+  }
+}
+
+/* Active state enhancement */
+.ant-menu-item-active {
+  background: #f8f9fa !important;
+}
+
+/* Focus states for accessibility */
+.ant-menu-item:focus,
+.ant-menu-submenu-title:focus {
+  outline: 2px solid #1e4a2d !important;
+  outline-offset: 2px !important;
+}
+
+/* Profile Container Positioning - Add this to your MainLayout.css */
+
+/* Ensure the header container uses flexbox */
+.admin-header {
+  display: flex !important;
+  justify-content: space-between !important;
+  align-items: center !important;
+  width: 100% !important;
+}
+
+/* Header right section containing profile */
+.admin-header-g2 {
+  display: flex !important;
+  align-items: center !important;
+  gap: 16px !important;
+  margin-left: auto !important;
+  /* This pushes everything to the right */
+}
+
+/* Profile Container */
+.profile-container {
+  display: flex !important;
+  align-items: center !important;
+  cursor: pointer !important;
+  padding: 8px 12px !important;
+  border-radius: 8px !important;
+  transition: all 0.3s ease !important;
+  background: transparent !important;
+  border: 1px solid transparent !important;
+}
+
+.profile-container:hover {
+  background-color: #f8f9fa !important;
+  border-color: #e9ecef !important;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.08) !important;
+}
+
+/* Profile Image */
+.img-user {
+  width: 40px !important;
+  height: 40px !important;
+  border-radius: 50% !important;
+  object-fit: cover !important;
+  border: 2px solid #e9ecef !important;
+  transition: all 0.3s ease !important;
+  flex-shrink: 0 !important;
+  /* Prevents image from shrinking */
+}
+
+.profile-container:hover .img-user {
+  border-color: #dee2e6 !important;
+  transform: scale(1.05) !important;
+}
+
+/* Dropdown Arrow */
+.dropdown-arrow {
+  margin-left: 8px !important;
+  color: #6c757d !important;
+  font-size: 12px !important;
+  transition: all 0.3s ease !important;
+  user-select: none !important;
+}
+
+.profile-container:hover .dropdown-arrow {
+  color: #495057 !important;
+  transform: translateY(1px) !important;
+}
+
+/* User info text positioning */
+.txt-username {
+  font-weight: 600 !important;
+  color: #495057 !important;
+  font-size: 14px !important;
+  line-height: 1.2 !important;
+  white-space: nowrap !important;
+}
+
+/* Icons positioning */
+.icon-email,
+.icon-notify {
+  font-size: 20px !important;
+  color: #6c757d !important;
+  cursor: pointer !important;
+  transition: color 0.3s ease !important;
+  padding: 8px !important;
+  border-radius: 6px !important;
+}
+
+.icon-email:hover,
+.icon-notify:hover {
+  color: #495057 !important;
+  background-color: #f8f9fa !important;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  .admin-header-g2 {
+    gap: 8px !important;
+  }
+
+  .img-user {
+    width: 32px !important;
+    height: 32px !important;
+  }
+
+  .profile-container {
+    padding: 6px 8px !important;
+  }
+
+  /* Hide username text on very small screens */
+  .txt-username {
+    display: none;
+  }
+}
+
+@media (max-width: 480px) {
+
+  .icon-email,
+  .icon-notify {
+    font-size: 18px !important;
+    padding: 6px !important;
+  }
+}
+
+/* Active/Focus States */
+.profile-container:focus {
+  outline: 2px solid #007bff !important;
+  outline-offset: 2px !important;
+}
+
+.profile-container:active {
+  transform: scale(0.98) !important;
+}
+
+/* Dropdown active state */
+.ant-dropdown-open .profile-container {
+  background-color: #f8f9fa !important;
+  border-color: #dee2e6 !important;
+}
+
+.ant-dropdown-open .dropdown-arrow {
+  transform: rotate(180deg) !important;
+  color: #495057 !important;
+}
+
+/* Language Switcher Neo Styling */
+.lang-switcher-container {
+  display: flex !important;
+  align-items: center !important;
+  background: #f0f2f5 !important;
+  padding: 4px !important;
+  border-radius: 50px !important;
+  box-shadow: inset 3px 3px 6px #cbd1d9, inset -3px -3px 6px #ffffff !important;
+  cursor: pointer;
+  position: relative;
+  width: 100px !important;
+  height: 40px !important;
+  transition: all 0.3s ease;
+  user-select: none;
+}
+
+.lang-toggle-handle {
+  position: absolute;
+  width: 48px !important;
+  height: 32px !important;
+  background: #ffffff !important;
+  border-radius: 50px !important;
+  top: 4px !important;
+  left: 4px !important;
+  transition: all 0.4s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+  box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.1), -1px -1px 5px #ffffff !important;
+  display: flex !important;
+  align-items: center !important;
+  justify-content: center !important;
+  z-index: 2;
+}
+
+.lang-toggle-handle.kh {
+  left: 48px !important;
+}
+
+.lang-labels {
+  display: flex !important;
+  width: 100% !important;
+  height: 100% !important;
+  justify-content: space-around !important;
+  align-items: center !important;
+  z-index: 1;
+}
+
+.lang-label {
+  font-size: 13px !important;
+  font-weight: 700 !important;
+  color: #a0a0a0 !important;
+  transition: color 0.3s;
+  flex: 1;
+  text-align: center;
+  line-height: 1 !important;
+}
+
+.lang-label.active {
+  color: #1e4a2d !important;
+}
+
+.lang-flag-emoji {
+  font-size: 18px !important;
+  line-height: 1 !important;
+  justify-content: center !important;
+}
+
+
+.lang-switcher-container:active {
+  transform: scale(0.95);
+}
+
+/* 🚀 Premium Header Enhancements */
+.premium-upgrade-btn {
+  background: #1e4a2d !important;
+  border: none !important;
+  border-radius: 50px !important;
+  font-weight: 800 !important;
+  font-size: 11px !important;
+  height: 36px !important;
+  padding: 0 20px !important;
+  color: #fff !important;
+  box-shadow: 0 4px 15px rgba(30, 74, 45, 0.2) !important;
+  transition: all 0.3s ease !important;
+  letter-spacing: 0.8px !important;
+}
+
+.premium-upgrade-btn:hover {
+  transform: translateY(-2px) !important;
+  box-shadow: 0 6px 20px rgba(30, 74, 45, 0.3) !important;
+  filter: brightness(1.15);
+}
+
+.icon-action-btn {
+  width: 36px;
+  height: 36px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  border-radius: 10px;
+  transition: all 0.2s ease;
+  color: #636e72;
+}
+
+.icon-action-btn:hover {
+  background: #fff;
+  color: #1e4a2d;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.05);
+  transform: translateY(-1px);
+}
+
+.img-user-premium {
+  width: 44px;
+  height: 44px;
+  border-radius: 14px;
+  object-fit: cover;
+  border: 2px solid #fff;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.08);
+  transition: all 0.3s ease;
+}
+
+.profile-wrapper:hover .img-user-premium {
+  transform: scale(1.05);
+  box-shadow: 0 6px 16px rgba(0,0,0,0.12);
+}
+
+@media (max-width: 768px) {
+  .img-user-premium {
+    width: 36px;
+    height: 36px;
+    border-radius: 10px;
+  }
+}

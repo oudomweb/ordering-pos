@@ -1,0 +1,70 @@
+.profilePage {
+  padding: 24px;
+  background-color: #f0f2f5;
+  min-height: 100vh;
+}
+
+.profileCard {
+  max-width: 800px;
+  margin: 0 auto;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.imageUploadContainer {
+  text-align: center;
+  margin-bottom: 24px;
+}
+
+.uploadLabel {
+  font-size: 16px;
+  font-weight: 500;
+  color: #333;
+}
+
+.uploadComponent .ant-upload.ant-upload-select-picture-card {
+  width: 120px;
+  height: 120px;
+  border-radius: 50%;
+  background-color: #f0f2f5;
+  border: 2px dashed #ccc;
+}
+
+.uploadPlaceholder {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.uploadIcon {
+  font-size: 40px;
+  color: #aaa;
+}
+
+.uploadText {
+  margin-top: 8px;
+  color: #666;
+}
+
+.profileForm {
+  padding: 16px;
+}
+
+.inputField {
+  width: 100%;
+  border-radius: 4px;
+}
+
+.saveButton {
+  width: 100%;
+  background-color: #1890ff;
+  border-color: #1890ff;
+  border-radius: 4px;
+  font-weight: 500;
+}
+
+.saveButton:hover {
+  background-color: #40a9ff;
+  border-color: #40a9ff;
+}
